@@ -7,6 +7,7 @@
 
 :root {
     --btn_bg: #0061fe;
+    --bg_jumbotron: #b4d0e6;
 }
 
 /* Generics */
@@ -28,16 +29,38 @@ ul {
 .button {
     background-color: var(--btn_bg);
     padding: 5px 10px;
+    color: white;
+    border-radius: 0.2rem;
 }
 /* Utils */
 .container {
-    max-width: 1200pz;
+    max-width: 1200px;
     margin: 0 auto;
 }
 .d_flex {
     display: flex;
 }
 
+/* #region col clas */
+.col_1 {
+    width: calc(100% / 12 * 12);
+}
+.col_2 {
+    width: calc(100% / 12 * 6);
+}
+.col_3 {
+    width: calc(100% / 12 * 4);
+}
+.col_4 {
+    width: calc(100% / 12 * 3);
+}
+.col_6 {
+    width: calc(100% / 12 * 2);
+}
+.row {
+    flex-wrap: wrap;
+}
+/* #endregion col class */
 /* Debug */
 .helper {
     * {
@@ -51,7 +74,7 @@ header {
 
     /* Navbar Menu */
     #navbar_menu {
-        justify-content: space-between;
+        justify-content: space-evenly;
         padding: 20px;
         line-height: 2rem;
         font-size: 0.9rem;
@@ -59,6 +82,32 @@ header {
             .cmd_inizia {
                 color: white;
             }
+        }
+    }
+}
+
+/* !Main */
+main {
+    background-color: white;
+    .jumbo_container {
+        background-color: var(--bg_jumbotron);
+        .jumbo_title {
+            line-height: 1.3;
+            font-size: 3.3rem;
+            padding: 15px;
+        }
+        .jumbo_pha {
+            flex-direction: column;
+            justify-content: space-between;
+            .jumbo_text {
+                line-height: 1.3;
+            }
+            .fa-solid {
+                font-size: 2.5rem;
+            }
+        }
+        .jumbo_img {
+            text-align: center;
         }
     }
 }
