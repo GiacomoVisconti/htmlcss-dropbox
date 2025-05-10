@@ -96,6 +96,10 @@ ul {
 
 /* !Header */
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     /* Navbar Menu */
     #navbar_menu {
         background-color: white;
