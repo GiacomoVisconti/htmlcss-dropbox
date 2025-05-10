@@ -33,6 +33,15 @@ ul {
     border-radius: 0.2rem;
     text-align: center;
 }
+.subscrition_plan_user_type {
+    justify-content: center;
+    border: 1px solid grey;
+    padding: 8px;
+    gap: 5px;
+}
+.subscriction_plan_payment {
+    color: grey;
+}
 /* Utils */
 .container {
     max-width: 1200px;
@@ -50,7 +59,7 @@ ul {
     border: 0.1rem solid grey;
 }
 
-/* #region col clas */
+/* #region col class */
 .col_1 {
     width: calc(100% / 12 * 12);
 }
@@ -79,14 +88,15 @@ ul {
 
 /* !Header */
 header {
-    background-color: white;
-
     /* Navbar Menu */
     #navbar_menu {
+        background-color: white;
         justify-content: space-between;
         padding: 20px;
         line-height: 2rem;
         font-size: 0.9rem;
+
+        z-index: 100;
         .navbar_menu_right {
             .cmd_inizia {
                 color: white;
@@ -163,15 +173,10 @@ main {
 
         .subscrition_plan {
             flex-direction: column;
-            .subscrition_plan_user_type {
-                justify-content: center;
-                border: 1px solid grey;
-                padding: 8px;
-                gap: 5px;
-                .subscrition_plan_user_type_text {
-                    font-size: 0.9rem;
-                    text-align: center;
-                }
+
+            .subscrition_plan_user_type_text {
+                font-size: 0.9rem;
+                text-align: center;
             }
             .subscriction_plan_card {
                 padding: 40px 40px;
@@ -222,6 +227,33 @@ main {
                             }
                         }
                     }
+                }
+            }
+        }
+        .enterprise_plan_row {
+            border: 1px solid gray;
+            padding-top: 40px;
+            flex-direction: column;
+            .enterprise_plan_row_container {
+                padding: 15px;
+                .enterprise_plan_row_descr_cda {
+                    flex-direction: row;
+                    justify-content: space-between;
+                    .enterprise_plan_row_description {
+                        .subscriction_plan_name {
+                            padding: 10px;
+                        }
+                        .subscriction_plan_text {
+                            padding: 10px;
+                            font-weight: 600;
+                        }
+                    }
+                    .enterprise_plan_row_cda {
+                        align-content: center;
+                    }
+                }
+                .subscriction_plan_info {
+                    padding: 10px;
                 }
             }
         }
