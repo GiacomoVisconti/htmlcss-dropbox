@@ -119,8 +119,7 @@ header {
     #navbar_menu {
         background-color: white;
         justify-content: space-between;
-        .menu_link {
-        }
+        padding: 0px 10px;
         li {
             align-content: center;
             padding: 20px 0px;
