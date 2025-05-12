@@ -354,3 +354,43 @@ main {
         text-decoration: underline;
     }
 }
+/* !Footer */
+footer {
+    background-color: black;
+    color: white;
+    min-height: 100px;
+    .divisor {
+        width: 10%;
+        border: 0.1rem solid white;
+        margin: 20px 0px;
+    }
+    a {
+        color: white;
+    }
+    .footer_top {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        align-items: center;
+
+        .internal_link_table {
+            flex-direction: column;
+            padding: 20px 0px;
+            gap: 10px;
+            flex-grow: 1;
+            .internal_link_title {
+                font-size: 1.1rem;
+                padding: 10px 0px;
+            }
+            .internal_links_list {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    }
+    .footer_bottom {
+        padding: 20px 0px;
+        color: lightgray;
+    }
+}
