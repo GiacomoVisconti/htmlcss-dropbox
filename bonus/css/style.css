@@ -1,0 +1,403 @@
+/* Css Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --btn_bg: #0061fe;
+    --bg_jumbotron: #b4d0e6;
+}
+
+/* Generics */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+img {
+    max-width: 100%;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    gap: 15px;
+}
+.menu_link:hover {
+    border-bottom: 2px solid black;
+}
+.button {
+    background-color: var(--btn_bg);
+    padding: 10px 15px;
+    color: white;
+    border-radius: 0.2rem;
+    text-align: center;
+    &:hover {
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+    }
+}
+.light_button {
+    padding: 10px 15px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 0.2rem;
+    text-align: center;
+    background-color: white;
+    &:hover {
+        border: 1px solid grey;
+        color: gray;
+    }
+}
+
+.subscrition_plan_user_type {
+    justify-content: center;
+    border: 1px solid grey;
+    padding: 8px;
+    gap: 5px;
+}
+.subscriction_plan_payment {
+    color: grey;
+}
+/* Utils */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container_sm {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.d_flex {
+    display: flex;
+}
+.divisor {
+    width: 25%;
+    border: 0.1rem solid grey;
+}
+
+/* #region col class */
+.col_1 {
+    width: calc(100% / 12 * 12);
+}
+.col_2 {
+    width: calc(100% / 12 * 6);
+}
+.col_3 {
+    width: calc(100% / 12 * 4);
+}
+.col_4 {
+    width: calc(100% / 12 * 3);
+}
+.col_6 {
+    width: calc(100% / 12 * 2);
+}
+.row {
+    flex-wrap: wrap;
+}
+/* #endregion col class */
+/* Debug */
+.helper {
+    * {
+        border: 1px dashed black;
+    }
+}
+
+/* !Header */
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+
+    /* Navbar Menu */
+    #navbar_menu {
+        background-color: white;
+        justify-content: space-between;
+        padding: 0px 10px;
+        li {
+            align-content: center;
+            padding: 20px 0px;
+        }
+
+        .navbar_menu_left {
+            vertical-align: center;
+            text-align: center;
+        }
+        .navbar_menu_right {
+            vertical-align: center;
+        }
+
+        .navbar_menu_right {
+            .cmd_inizia {
+                color: white;
+            }
+        }
+    }
+}
+
+/* !Main */
+main {
+    background-color: white;
+
+    /* #region Jumbotron */
+    .jumbo_container {
+        background-color: var(--bg_jumbotron);
+        padding-bottom: 20px;
+
+        .jumbo_title {
+            line-height: 1.3;
+            font-size: 4rem;
+            padding: 4rem 4rem 4rem 0rem;
+            font-weight: 900;
+        }
+        .jumbo_pha {
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 35px;
+            .jumbo_text {
+                line-height: 1.4;
+            }
+            .fa-solid {
+                font-size: 2.5rem;
+            }
+        }
+        .jumbo_img {
+            margin-bottom: -10rem;
+        }
+    }
+    /* #endregion Jumbotron */
+
+    /* #region Subscrition Plans */
+
+    /* Radio Button */
+
+    .subscrition_plan_container {
+        padding-top: 5rem;
+
+        .subscrition_plan_title {
+            font-size: 2.5rem;
+            padding: 20px 0px;
+        }
+        .radio_button {
+            flex-direction: row;
+            gap: 50px;
+            padding: 3rem 3rem 3rem 0rem;
+            .radio_button_select {
+                color: var(--btn_bg);
+            }
+            .radio_button_notselect {
+                justify-content: center;
+                align-content: center;
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                border: 2px solid grey;
+            }
+        }
+
+        .subscrition_plan_column {
+            gap: 15px;
+            flex-wrap: nowrap;
+        }
+
+        .subscrition_plan {
+            flex-direction: column;
+
+            .subscrition_plan_user_type_text {
+                font-size: 0.9rem;
+                text-align: center;
+            }
+            .subscriction_plan_card {
+                padding: 40px 40px;
+                border: 1px solid grey;
+                flex-direction: column;
+                gap: 15px;
+                height: 100%;
+                .subscriction_plan_name {
+                    font-size: 1.5rem;
+                }
+                .subscriction_plan_price {
+                    font-weight: 600;
+                    font-size: 0.9rem;
+                }
+                .subscriction_plan_payment {
+                    color: grey;
+                }
+                .subscriction_plan_description {
+                    padding: 20px 0px;
+                    flex-direction: column;
+                    gap: 25px;
+                    .subscriction_plan_info {
+                        gap: 5px;
+                        font-size: 0.9rem;
+                    }
+                }
+                .cda_get {
+                    flex-direction: column;
+                    gap: 25px;
+                    padding: 20px 0px;
+                    .buy_now {
+                        text-decoration: underline;
+                        color: blue;
+                    }
+                }
+                .subscriction_plan_details {
+                    padding: 25px 0px;
+                    flex-direction: column;
+                    gap: 35px;
+                    .subscriction_plan_details_points {
+                        flex-direction: column;
+                        gap: 25px;
+                        font-size: 0.9rem;
+                        .subscriction_plan_details_point {
+                            gap: 5px;
+                            .fa-check {
+                                color: #0062ff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .enterprise_plan_row {
+            border: 1px solid gray;
+            margin-top: 40px;
+            border-top: none;
+            flex-direction: column;
+            .enterprise_plan_row_container {
+                padding: 15px;
+                .enterprise_plan_row_descr_cda {
+                    flex-direction: row;
+                    justify-content: space-between;
+                    .enterprise_plan_row_description {
+                        .subscriction_plan_name {
+                            padding: 10px;
+                        }
+                        .subscriction_plan_text {
+                            padding: 10px;
+                            font-weight: 600;
+                        }
+                    }
+                    .enterprise_plan_row_cda {
+                        align-content: center;
+                    }
+                }
+                .subscriction_plan_info {
+                    padding: 10px;
+                }
+            }
+        }
+    }
+    /* #endregion Subscrition Plans */
+
+    /* #region Partner Dropbox */
+    .partner_dropbox_container {
+        margin-top: 50px;
+        .partner_dropbox_box {
+            justify-content: space-evenly;
+            gap: 20px;
+            padding: 20px;
+            position: relative;
+            .partner_dropbox_img {
+                width: 60%;
+            }
+            .partner_dropbox_description {
+                width: 40%;
+                height: 100%;
+                flex-direction: column;
+                position: relative;
+                top: 45px;
+                gap: 20px;
+                line-height: 1.3;
+                font-size: 1rem;
+                .partner_dropbox_title {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+    /* #endregion Partner Dropbox */
+
+    /* #region Dropbox  Operation table*/
+    .dropbox_operation_table_container {
+        padding: 20px;
+        margin-top: 50px;
+        .dropbox_operation_title {
+            font-size: 1.8rem;
+            padding: 30px 30px 30px 30px;
+        }
+        .dropbox_operation_table_box {
+            .dropbox_operation_table_card {
+                padding: 30px;
+                flex-direction: column;
+                gap: 15px;
+                .dropbox_operation_card_title {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    /* #endregion Dropbox  Operation table*/
+}
+/* Section utenti attivi*/
+.active_users {
+    padding: 80px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    .active_users_title {
+        padding: 0.5rem 0;
+        font-size: 1.5rem;
+    }
+    .active_users_link {
+        color: blue;
+        padding: 0.5rem 0;
+        text-decoration: underline;
+    }
+}
+/* !Footer */
+footer {
+    background-color: black;
+    color: white;
+    min-height: 100px;
+    .divisor {
+        width: 10%;
+        border: 0.1rem solid white;
+        margin: 20px 0px;
+    }
+    a {
+        color: white;
+    }
+    .footer_top {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        align-items: center;
+
+        .internal_link_table {
+            flex-direction: column;
+            padding: 20px 0px;
+            gap: 10px;
+            flex-grow: 1;
+            .internal_link_title {
+                font-size: 1.1rem;
+                padding: 10px 0px;
+            }
+            .internal_links_list {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    }
+    .footer_bottom {
+        padding: 20px 0px;
+        color: lightgray;
+    }
+}
