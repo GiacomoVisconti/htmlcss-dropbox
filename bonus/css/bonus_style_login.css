@@ -1,0 +1,114 @@
+/* Css reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin-bottom: 100px;
+}
+#login {
+    border-bottom: 2px solid black;
+}
+.menu_link:hover {
+    #login {
+        border-bottom: 0px solid black;
+        border-bottom: transparent;
+    }
+}
+.button_login {
+    width: 300px;
+    padding: 10px 20px;
+    text-align: left;
+    border: 1px solid gray;
+    &:hover {
+        background-color: lightgray;
+    }
+}
+.input_container {
+    max-width: 350px;
+    margin: 0 auto;
+}
+.fa-brands {
+    margin: 0px 20px;
+}
+.fa-apple {
+    transform: scale(1.3);
+}
+input {
+    width: 200px;
+    height: 30pxpx;
+}
+input {
+    position: relative;
+    top: 28px;
+    left: 56px;
+    height: 20px;
+
+    &:hover {
+        border: 1px solid black;
+    }
+    &:active {
+        border: 1px solid blue;
+    }
+}
+label {
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.login_divisor {
+    flex-direction: row;
+
+    justify-content: center;
+    .divisor_ {
+        font-size: 1.1rem;
+        color: gray;
+    }
+}
+
+form {
+    min-height: 500px;
+    margin: 100px;
+
+    flex-direction: column;
+    #login_title {
+        text-align: center;
+        padding: 20px;
+    }
+    .cta_login {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        gap: 20px;
+    }
+    .or {
+        text-align: center;
+        padding: 10px 20px;
+    }
+    .input_box {
+        margin: 20px;
+        flex-direction: column;
+        height: 100%;
+        .user_input_box {
+            flex-direction: column;
+            position: relative;
+        }
+    }
+    button {
+        margin: 50px;
+        padding: 10px 50px;
+        font-size: 1.3rem;
+        border-radius: 15px;
+        background-color: #0061fe;
+        color: white;
+        border: transparent;
+    }
+}
+
+footer {
+    margin-top: 100px;
+}

@@ -12,14 +12,14 @@
             referrerpolicy="no-referrer"
         />
         <link rel="icon" href="./img/favicon.png" />
-        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/bonus_style.css" />
     </head>
     <body class="">
         <header>
             <nav id="navbar_menu" class="d_flex">
                 <ul class="navbar_menu_left d_flex">
                     <li>
-                        <a id="navbar_logo" href=""
+                        <a id="navbar_logo" href="./bonus_index.html"
                             ><img src="./img/logo-small.png" alt="Logo small"
                         /></a>
                     </li>
@@ -32,7 +32,9 @@
                     <li class="menu_link">
                         <a href="">Contatta l'ufficio ventide</a>
                     </li>
-                    <li class="menu_link"><a href="">Accedi</a></li>
+                    <li id="login" class="menu_link">
+                        <a href="./bonus_login.html">Accedi</a>
+                    </li>
                     <li>
                         <a href=""><span class="button">Inizia</span></a>
                     </li>
@@ -95,14 +97,26 @@
                 </h2>
                 <div class="radio_button d_flex">
                     <div class="d_flex">
-                        <i
-                            class="radio_button_select fa-solid fa-circle-dot"
-                        ></i>
-                        <p class="radio_button_text">Fatturazione mensile</p>
+                        <input
+                            type="radio"
+                            name="payment"
+                            value="Fatturazione mensile"
+                            id="monthly_payment"
+                        />
+                        <label for="monthly_payment"
+                            >Fatturazione Mensile</label
+                        >
+
+                        <!-- <p class="radio_button_text">Fatturazione mensile</p> -->
                     </div>
                     <div class="d_flex">
-                        <span class="radio_button_notselect d_flex"></span>
-                        <p class="radio_button_text">Fatturazione annuale</p>
+                        <input
+                            type="radio"
+                            name="payment"
+                            value="Fatturazione annuale"
+                            id="annual_payment"
+                        />
+                        <label for="annual_payment">Fatturazione Annuale</label>
                     </div>
                 </div>
 
