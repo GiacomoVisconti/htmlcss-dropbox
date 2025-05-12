@@ -12,9 +12,8 @@ header {
 #login {
     border-bottom: 2px solid black;
 }
-.menu_link:hover {
+li:hover {
     #login {
-        border-bottom: 0px solid black;
         border-bottom: transparent;
     }
 }
@@ -106,6 +105,9 @@ form {
         background-color: #0061fe;
         color: white;
         border: transparent;
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
 
