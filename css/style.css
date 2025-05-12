@@ -119,14 +119,19 @@ header {
     #navbar_menu {
         background-color: white;
         justify-content: space-between;
-
-        line-height: 2rem;
-        font-size: 0.9rem;
-        li {
-            padding: 10px 5px;
+        .menu_link {
         }
-        a {
+        li {
+            align-content: center;
             padding: 20px 0px;
+        }
+
+        .navbar_menu_left {
+            vertical-align: center;
+            text-align: center;
+        }
+        .navbar_menu_right {
+            vertical-align: center;
         }
 
         .navbar_menu_right {
