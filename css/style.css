@@ -26,6 +26,9 @@ ul {
     list-style-type: none;
     gap: 15px;
 }
+.menu_link:hover {
+    border-bottom: 2px solid black;
+}
 .button {
     background-color: var(--btn_bg);
     padding: 10px 15px;
@@ -116,9 +119,12 @@ header {
     #navbar_menu {
         background-color: white;
         justify-content: space-between;
-        padding: 20px;
+        /* padding: 20px; */
         line-height: 2rem;
         font-size: 0.9rem;
+        li {
+            padding: 20px 5px;
+        }
 
         .navbar_menu_right {
             .cmd_inizia {
@@ -331,4 +337,20 @@ main {
         }
     }
     /* #endregion Dropbox  Operation table*/
+}
+/* Section utenti attivi*/
+.active_users {
+    padding: 80px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    .active_users_title {
+        padding: 0.5rem 0;
+        font-size: 1.5rem;
+    }
+    .active_users_link {
+        color: blue;
+        padding: 0.5rem 0;
+        text-decoration: underline;
+    }
 }
